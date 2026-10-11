@@ -1,4 +1,45 @@
 # Revenue Metrics Analysis
-Based on data obtained from a company operating in the gaming industry, this study aims to analyze the company’s cash flows.
 
-This process will be carried out in three stages. First, various queries will be performed in PostgreSQL to examine the values of different metrics and to gain a full understanding of the data. In the second stage, the data will be evaluated based on predefined metrics in a Python environment, and visualizations will be created. In the final stage, the results will be visualized in Tableau, and a dashboard will be developed.
+Revenue and cash-flow analysis for a gaming company, built in three stages:
+exploration in PostgreSQL, metric evaluation in Python, and an interactive
+Tableau dashboard.
+
+**[Report](https://onurdoker.github.io/Revenue-Metrics-Analysis/)** · 
+
+**[Tableau Public Dashboard](https://public.tableau.com/views/RevenueMetricAnalysis/Dashboard12?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)** ·
+
+Dashboard preview
+<img width="1584" height="886" alt="SCR-20261012-bpdw" src="https://github.com/user-attachments/assets/9fdf3829-f02c-4866-975a-84d515c2d9c1" />
+
+
+## Approach
+
+1. **Exploration (PostgreSQL):** queries to inspect the data, check quality and
+   examine metric values. See [`sql/`](sql/).
+2. **Metric evaluation (Python):** [metrics computed, e.g. monthly revenue,
+   ARPU, ...] with pandas and [matplotlib/seaborn]. See [`notebooks/`](notebooks/).
+3. **Dashboard (Tableau):** results visualized in a dashboard published on
+   Tableau Public. Workbook in [`workbook/`](workbook/).
+
+## Data
+
+The three CSV files in [`data/`](data/) were provided by a company in the
+gaming industry and consist of publicly available data without commercial
+value. They are included for reproducibility and are not relicensed here.
+
+
+## Repository structure
+
+```
+sql/         exploratory queries
+notebooks/   metric evaluation and visualizations
+workbook/    Tableau workbook
+docs/        GitHub Pages report (HTML)
+data/        source CSV files
+```
+
+## Limitations
+
+- [Metric definitions and assumptions used]
+- [Data gaps or quality issues found]
+- No forecasting or statistical testing in this analysis
